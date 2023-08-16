@@ -1,0 +1,47 @@
+// Button styles
+
+@each $color, $value in map-remove($theme-colors, "secondary", "dark", "light") {
+  .btn-#{$color} {
+    --#{$prefix}btn-hover-bg: #{darken($value, 10%)};
+    --#{$prefix}btn-active-bg: #{darken($value, 10%)};
+    --#{$prefix}btn-hover-border-color: #{darken($value, 10%)};
+    --#{$prefix}btn-active-border-color: #{darken($value, 10%)};
+  }
+}
+
+
+.btn-secondary {
+  --#{$prefix}btn-color: #{$gray-700};
+  --#{$prefix}btn-bg: #{$gray-100};
+  --#{$prefix}btn-border-color: #{$gray-100};
+  --#{$prefix}btn-hover-color: #{$gray-700};
+  --#{$prefix}btn-hover-bg: #{$gray-200};
+  --#{$prefix}btn-hover-border-color: #{$gray-200};
+  --#{$prefix}btn-active-color: #{$gray-700};
+  --#{$prefix}btn-active-bg: #{$gray-200};
+  --#{$prefix}btn-active-border-color: #{$gray-200};
+  --#{$prefix}btn-disabled-color: #{$gray-700};
+  --#{$prefix}btn-disabled-bg: #{$gray-100};
+  --#{$prefix}btn-disabled-border-color: #{$gray-100};
+}
+
+.btn-dark {
+  // --#{$prefix}btn-hover-bg: #{$gray-950};
+  // --#{$prefix}btn-hover-border-color: #{$gray-950};
+  // --#{$prefix}btn-active-bg: #{$gray-950};
+  // --#{$prefix}btn-active-border-color: #{$gray-950};
+}
+
+.btn-light {
+  --#{$prefix}btn-color: #{$gray-900};
+  --#{$prefix}btn-hover-color: #{$gray-900};
+  --#{$prefix}btn-hover-bg: #{$gray-200};
+  --#{$prefix}btn-hover-border-color: #{$gray-200};
+  --#{$prefix}btn-active-color: #{$gray-900};
+  --#{$prefix}btn-active-bg: #{$gray-200};
+  --#{$prefix}btn-active-border-color: #{$gray-200};
+}
+
+.btn-link {
+  font-weight: $btn-font-weight;
+}
