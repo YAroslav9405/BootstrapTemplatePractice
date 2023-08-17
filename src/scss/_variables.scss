@@ -1,15 +1,17 @@
 // Variables
 
 // colors
-$dark-blue: #4A5FEF;
 $gray: #EDF0F8;
 $gray-outline: #BDC4DD;
-$black: #1C1F2C;
+$light-black: #1C1F2C;
 $white: #fff;
 $green: #14E17F;
 $red: #F65045;
 $orange: #F69A45; 
 $blue: #18A0FB;
+$dark-gray: #DBE1F2;
+$dark-black: #0A0B14;
+$dark-blue: #4A5FEF;
 
 // Main Colors
 $primary: $dark-blue !default;
@@ -19,10 +21,12 @@ $success: $green !default;
 $warning: $orange !default;
 $info: $blue !default;
 
-$dark: $black !default;
+$dark: $light-black !default;
 $light: $white !default;
 
+// Fonts
 
+$inter: 'Inter', sans-serif;
 
 // Btn Sizes
 $btn-padding-y-sm: 0.63rem !default;
@@ -33,6 +37,11 @@ $btn-padding-y-lg:  0.75rem !default;
 $btn-padding-x-lg:  2rem !default;
 $btn-border-radius-sm: 0.375rem !default;
 $btn-border-radius-lg: 0.375rem !default;
+$btn-font-family: $inter !default;
+$btn-font-size-sm: 0.875rem !default;   
+$btn-font-size: 1rem !default;  
+$btn-font-size-lg: 1.25rem !default;
+
 
 
 // My Prefix
