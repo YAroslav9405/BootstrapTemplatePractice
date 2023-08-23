@@ -26,7 +26,10 @@ $light: $white !default;
 
 // Fonts
 
-$font-family-base: 'Inter', sans-serif;
+$font-family-base: 'Inter', sans-serif !default;
+$font-size-base: 1rem !default;
+
+
 
 // Btn Sizes
 $btn-padding-y-sm: 0.63rem !default;
@@ -38,20 +41,31 @@ $btn-padding-x-lg:  2rem !default;
 $btn-border-radius-sm: 0.375rem !default;
 $btn-border-radius-lg: 0.375rem !default;
 $btn-font-size-sm: 0.875rem !default;   
-$btn-font-size: 1rem !default;  
-$btn-font-size-lg: 1.25rem !default;
+$btn-font-size: $font-size-base * 1 !default;  
+$btn-font-size-lg: $font-size-base * 1.25 !default;
 
 // typography
 
-$display-font-weight: 700;
+$display-font-weight: bold !default;
+$display-line-height: 120% !default;
 $display-font-sizes: (
-  1: 7rem,
-  2: 5rem,
-  3: 4.5rem,
-  4: 4rem,
-  5: 3.5rem,
-  6: 2.8rem
+  1: $font-size-base * 7,
+  2: $font-size-base * 5,
+  3: $font-size-base * 4.5,
+  4: $font-size-base * 4,
+  5: $font-size-base * 3.5,
+  6: $font-size-base * 2.8
 ) !default;
+$headings-font-weight: bold !default;
+$headings-line-height:  140% !default;
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 2.25 !default;
+$h4-font-size: $font-size-base * 1.75 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.25 !default;
+$lead-font-weight: bold !default;
+
 
 // My Prefix
 $variable-prefix:             yr- !default; // Deprecated in v5.2.0 for the shorter `$prefix`

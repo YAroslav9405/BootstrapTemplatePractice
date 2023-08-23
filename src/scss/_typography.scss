@@ -1,0 +1,33 @@
+// Typography styles
+
+.display-1,
+.display-2 {
+    font-weight: bolder;
+}
+
+h1,
+.h1 {
+    line-height: 130%;
+}
+
+h5,
+h6
+.h5,
+.h6,
+p {
+    line-height: 150%;
+}
+
+$custom-font-sizes: (
+  "xxl": $font-size-base * 1.5,
+  "xl": $font-size-base * 1.25,
+  "lg": $font-size-base * 1,
+  "md": $font-size-base * 0.875,
+  "sm": $font-size-base * 0.75
+);
+
+@each $size, $value in $custom-font-sizes {
+  .#{$size} {
+    font-size: $value;
+  }
+}
